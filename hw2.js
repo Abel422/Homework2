@@ -1,15 +1,15 @@
 /*
 Name: Abel Kurian
-Date created: 2/24/26
-Date last edited: 2/24/26
-Version: 1.0
-Description: Homework 1 JS 
+Date created: 3/26/26
+Date last edited: 3/26/26
+Version: 2.0
+Description: Homework 2 JS 
 */
 
 //dynamic date js code
 const d = new Date();
 let text = d.toLocaleDateString();
-document.getElementById("today date").innerHTML = text;
+document.getElementById("todaydate").innerHTML = text;
 
 //name slider js code
 let slider = document.getElementById("range");
@@ -312,9 +312,21 @@ function reviewInput() {
         var el = formcontent.elements[i];
         var datatype = el.type;
         var name = el.name;
+
+        if (name === "fname") name = "First Name";
+        if (name === "mname") name = "Middle Initial";
+        if (name === "lname") name = "Last Name";
+        if (name === "phonen") name = "Phone Number";
+        if (name === "email") name = "Email Address";
+        if (name === "zcode") name = "Zip Code";
+        if (name === "vacc") name = "Have you been vaccinated?";
+        if (name === "insur") name = "Do you have insurance?";
+        if (name === "range") name = "Pain Level (0 to 10)";
+        if (name === "username") name = "User ID";
+
+
         var value = el.value;
 
-        // skip elements with no name
         if (!name) continue;
 
         switch (datatype) {
@@ -333,7 +345,7 @@ function reviewInput() {
                 break;
 
             case "range":
-                // Only show the slider if the user moved it off the default (0)
+                
                 if (value !== "0") {
                     formoutput += "<tr><td align='right'>" + name + "</td>";
                     formoutput += "<td class='outputdata'>" + value + "</td></tr>";

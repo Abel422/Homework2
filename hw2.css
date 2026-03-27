@@ -1,9 +1,9 @@
 /*
 Name: Abel Kurian
-Date created: 2/24/26
-Date last edited: 2/24/26
-Version: 1.0
-Description: Homework 1 JS 
+Date created: 3/26/26
+Date last edited: 3/26/26
+Version: 2.0
+Description: Homework 2 JS 
 */
 
 header {
@@ -56,7 +56,7 @@ th {
 }
 
 footer {
-    position: flex;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #cde20d;
@@ -142,3 +142,8 @@ td.output {
     padding: 10px;
     border-spacing: 2px;
 }
+
+table {
+    margin: 0 auto;
+}
+
