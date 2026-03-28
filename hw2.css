@@ -58,7 +58,7 @@ th {
 footer {
     position: flex;      
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #cde20d;
     height: 3.0rem;
     align-self: stretch;  

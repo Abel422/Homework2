@@ -348,14 +348,14 @@ function reviewInput() {
         switch (datatype) {
             case "checkbox":
                 if (el.checked) {
-                    formoutput += "<tr><td align='right'>" + name + "</td>";
+                    formoutput += "<tr><td align='left'>" + name + "</td>";
                     formoutput += "<td class='outputdata'>&#x2713;</td></tr>";
                 }
                 break;
 
             case "radio":
                 if (el.checked) {
-                    formoutput += "<tr><td align='right'>" + name + "</td>";
+                    formoutput += "<tr><td align='left'>" + name + "</td>";
                     formoutput += "<td class='outputdata'>" + value + "</td></tr>";
                 }
                 break;
@@ -363,7 +363,7 @@ function reviewInput() {
             case "range":
                 
                 if (value !== "0") {
-                    formoutput += "<tr><td align='right'>" + name + "</td>";
+                    formoutput += "<tr><td align='left'>" + name + "</td>";
                     formoutput += "<td class='outputdata'>" + value + "</td></tr>";
                 }
                 break;
@@ -376,7 +376,7 @@ function reviewInput() {
 
             default:
                 if (value !== "") {
-                    formoutput += "<tr><td align='right'>" + name + "</td>";
+                    formoutput += "<tr><td align='left'>" + name + "</td>";
                     formoutput += "<td class='outputdata'>" + value + "</td></tr>";
                 }
         }
