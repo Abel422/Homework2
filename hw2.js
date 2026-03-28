@@ -287,7 +287,7 @@ function validatePass() {
 
 
 //validate confirm password
-function confirmPassword() {
+function validateCpass() {
     pword1 = document.getElementById("pass").value;
     pword2 = document.getElementById("cpass").value;
 
@@ -326,6 +326,12 @@ function reviewInput() {
     if (name === "zcode") name = "Zip Code";
     if (name === "email") name = "Email Address";
     if (name === "phonen") name = "Phone Number";
+    if (name === "option1") name = "Sore Throat";
+    if (name === "option2") name = "Fever";
+    if (name === "option3") name = "Headache";
+    if (name === "option4") name = "Cough";
+    if (name === "option5") name = "Shortness of Breath";
+    if (name === "option6") name = "None";
     if (name === "vacc") name = "Have you been vaccinated?";
     if (name === "insur") name = "Do you have insurance?";
     if (name === "notes") name = "Additional Notes";
